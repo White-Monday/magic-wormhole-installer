@@ -2,19 +2,19 @@
 
 A robust, automated, and "smart" Batch installer to deploy **Magic Wormhole** on Windows, handling all dependencies (Python and Pipx) with zero manual configuration.
 
-[![Platform](https://shields.io)](https://microsoft.com)
-[![License: MIT](https://shields.io)](https://opensource.org)
+[![Windows](https://img.shields.io/badge/Platform-🪟%20Windows-0078D6?style=for-the-badge)](https://microsoft.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green?logo=opensourceinitiative&logoColor=white&style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 
 ## 🚀 Key Features
 
 - **Auto-Privilege Escalation**: Automatically requests administrative privileges if missing.
 - **Reverse Cascade Installation**: Doesn't reinstall dependencies already installed.
-- **Intelligent logic that attempts to install Python via:
-  1. `WinGet`
-  2. `Chocolatey`
-  3. `Scoop`
-  4. `Direct Download` (MSIX or EXE via Curl)
+- **Intelligent logic that attempts** to install Python via:
+  1) `WinGet`
+  2) `Chocolatey`
+  3) `Scoop`
+  4) `Direct Download` (MSIX or EXE via Curl)
 - **Smart PATH Management**: 
   - Dynamic environment refresh (no terminal restart needed).
   - Safety check to prevent exceeding the Windows PATH limit (8192 characters).
@@ -28,7 +28,7 @@ A robust, automated, and "smart" Batch installer to deploy **Magic Wormhole** on
 1. **Download** the `.bat` file from the [Releases](../../releases) section or clone this repository.
 2. **Run** the script by double-clicking it or via CMD:
    ```cmd
-   installer.bat
+   magic_wormhole_installer.bat
    ```
 3. **Relax**: The script will verify your system. If Magic Wormhole is missing, it will sequentially install Python, Pipx, and finally Magic Wormhole.
 
