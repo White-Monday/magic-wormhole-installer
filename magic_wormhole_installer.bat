@@ -253,7 +253,7 @@ echo.
 call :colorText "TITLE" "MAGIC WORMHOLE IS READY TO USE"
 echo.
 call :colorText "INFO" "Type 'wormhole' to get started."
-call :colorText "INFO" "Read README.txt for available commands."
+call :colorText "INFO" "Read README.md for available commands."
 echo.
 pause & exit /b
 

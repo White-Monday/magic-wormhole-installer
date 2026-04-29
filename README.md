@@ -2,7 +2,7 @@
 
 A robust, automated, and "smart" Batch installer to deploy **Magic Wormhole** on Windows, handling all dependencies (Python and Pipx) with zero manual configuration.
 
-[![Windows](https://img.shields.io/badge/Platform-🪟%20Windows-0078D6?style=for-the-badge)](https://microsoft.com)
+[![Windows](https://img.shields.io/badge/🪟%20Platform-Windows-0078D6?style=for-the-badge)](https://microsoft.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?logo=opensourceinitiative&logoColor=white&style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 
@@ -11,10 +11,10 @@ A robust, automated, and "smart" Batch installer to deploy **Magic Wormhole** on
 - **Auto-Privilege Escalation**: Automatically requests administrative privileges if missing.
 - **Reverse Cascade Installation**: Doesn't reinstall dependencies already installed.
 - **Intelligent logic that attempts** to install Python via:
-  1) `WinGet`
-  2) `Chocolatey`
-  3) `Scoop`
-  4) `Direct Download` (MSIX or EXE via Curl)
+  - `WinGet`
+  - `Chocolatey`
+  - `Scoop`
+  - `Direct Download` (MSIX or EXE via Curl)
 - **Smart PATH Management**: 
   - Dynamic environment refresh (no terminal restart needed).
   - Safety check to prevent exceeding the Windows PATH limit (8192 characters).
